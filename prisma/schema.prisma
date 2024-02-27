@@ -15,8 +15,9 @@ datasource db {
 
 // Create table
 model user5 {
-  id Int @id @default(autoincrement())
+  id Int @id @default(autoincrement())  // @id means primary key
   name String 
   email String @unique
   phone String?          //optional
+  address String
 }

@@ -88,3 +88,16 @@ WHERE user_id = 1;`)
 // if error ROLLBACK;
 
 
+// PRISMA
+import { PrismaClient } from '@prisma/client'
+const prisma = new PrismaClient()
+
+const user= prisma.user5.create({
+    data:{
+        name: "Avijit",
+        email:"avi",
+        address:"16 dhiren"
+    }
+})
+
+
